@@ -1,21 +1,16 @@
 import './App.css';
 import AppBar from '@mui/material/AppBar';
-import Toolbar from '@mui/material/Toolbar';
+import { Toolbar } from '@mui/material';
+import { Typography } from '@mui/material';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
+    <div>
       <AppBar color="primary" position="static">
           <Toolbar>
-            <TypoGraphy variant="title"
-              color="inherit"
-            >
-              My header
-           </TypoGraphy>
+              Orban Family Farm
           </Toolbar>
         </AppBar>
-      </header>
     </div>
   );
 }
