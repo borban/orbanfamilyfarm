@@ -1,5 +1,5 @@
 import './App.css';
-import { Tab, Tabs, Box } from '@mui/material';
+import { Tab, Tabs} from '@mui/material';
 import banner from './images/banner.png';
 
 function App() {
