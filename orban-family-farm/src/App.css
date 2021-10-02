@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  background-color: #333D46;
 }
 
 .App-header {
@@ -19,6 +20,15 @@
   min-height: 600px;
 }
 
+.App-footer {
+  background-color: #333D46;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 50px;
+}
+
 .App-link {
-  color: #61dafb;
+  color: #333D46;
 }
