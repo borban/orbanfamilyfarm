@@ -12,13 +12,10 @@ import Blog from './content/Blog';
 function App() {
   return (
     <div>
-      <div class='App-header'>
-        <img
-          src={banner}
-          alt="banner" />
+      <div>
         <NavigationBar />
       </div>
-      <div class='App-body'>
+      <div>
         <Switch>
           <Route exact path="/" component={Home} />
           <Route path="/home" component={Home} />
@@ -27,9 +24,6 @@ function App() {
           <Route path="/contact-info" component={ContactInfo} />
           <Route path="/blog" component={Blog} />
         </Switch>
-      </div>
-      <div class='App-footer'>
-        This is the footer
       </div>
     </div >
   );
