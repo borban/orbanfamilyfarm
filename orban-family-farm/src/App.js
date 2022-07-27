@@ -1,6 +1,5 @@
 import React from "react";
 import "./App.css";
-import banner from "./images/banner.png";
 import NavigationBar from "./NavigationBar";
 import { Switch, Route } from "react-router";
 import Home from "./content/Home";
