@@ -1,8 +1,30 @@
-.App {
-  text-align: center;
-  background-color: #333D46;
-}
-
 .App-link {
   color: #333D46;
+}
+
+.container {
+  font-family: Oswald;
+  background-image: url("./images/background.jpg");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.banner {
+  height: 240px;
+  padding-top: 50px;
+}
+
+.banner-content {
+  padding-top: 25px;
+  padding-bottom: 25px;
+  margin-left: 100px;
+  margin-right: 100px;
+  text-align: center;
+  background-color: #807731;
+}
+
+.banner-content p{
+  padding: 10px 10px 10px 10px;
 }
