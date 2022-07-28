@@ -5,8 +5,8 @@ function Card(props) {
     <div className="card">
       <div className="card-title">{props.title}</div>
       <div className="card-content">
-        <img className="card-item" src={props.image} alt="placeholder" />
-        <p className="card-item">{props.text}</p>
+        <img src={props.image} alt="placeholder" />
+        <p>{props.text}</p>
       </div>
     </div>
   );

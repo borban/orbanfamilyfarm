@@ -29,7 +29,7 @@
 }
 
 .content {
- margin: 0px;
+  display: flexbox;
 }
 
 .card {
@@ -38,7 +38,6 @@
   margin-bottom: 15px;
   background-color: rgba(255, 255, 255, 0.5);
   margin: 15px;
-  width: 25%;
 }
 
 .card-title {
@@ -55,13 +54,8 @@
   text-align: center;
 }
 
-.card-item {
-  padding: 15px;
-}
-
 .footer {
   margin-top: 25px;
-  margin-bottom: 25px;
   background-color: rgba(134, 161, 190, 0.5);
   text-align: center;
 }

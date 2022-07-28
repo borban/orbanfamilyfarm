@@ -3,7 +3,9 @@ import React from "react";
 function Banner() {
   return (
     <div className="banner">
-      <div className="title"><h1>Orban Family Farm</h1></div>
+      <div className="title">
+        <h1>Orban Family Farm</h1>
+      </div>
       <div className="banner-content">
         <p>
           {" "}
