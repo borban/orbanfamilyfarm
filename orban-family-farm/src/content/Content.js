@@ -6,8 +6,8 @@ function Content() {
   const getText = () => {
     axios.get('https://tgyfpk3h5g.execute-api.us-east-1.amazonaws.com/default/?id=10006546')
     .then(response => {
-       setText(response.data.content)
-       console.log(response.data);
+       setText(response.data.content.document.summary)
+       console.log(response.data.content.document.summary);
     }).catch(error =>{
       console.log(error)
     })
