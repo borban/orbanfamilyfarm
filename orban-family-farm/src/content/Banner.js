@@ -3,12 +3,8 @@ import React from "react";
 function Banner() {
   return (
     <div className="banner">
-      <div className="title">
-        <h1>Orban Family Farm</h1>
-      </div>
       <div className="banner-content">
         <p>
-          {" "}
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut tortor
           pretium viverra suspendisse potenti nullam ac tortor. Amet porttitor
