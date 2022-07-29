@@ -1,17 +1,19 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 import Card from "../components/Card";
-import axios from 'axios';
+import axios from "axios";
 
 function Content() {
   const getText = () => {
     axios.get('https://tgyfpk3h5g.execute-api.us-east-1.amazonaws.com/default/?id=10006546')
-    .then(response => {
-       setText(response.data.content.document.summary)
-       console.log(response.data.content.document.summary);
-    }).catch(error =>{
-      console.log(error)
-    })
-  }
+      .then((response) => {
+        let result = JSON.parse(response.data.content);
+        setText(result.document.summary);
+        console.log(result.document.summary);
+      })
+      .catch((error) => {
+        console.log(error);
+      });
+  };
 
   const [text, setText] = useState(() => getText());
 
