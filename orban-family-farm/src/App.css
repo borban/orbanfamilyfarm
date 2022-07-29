@@ -42,8 +42,6 @@
   border: black solid 1px;
 }
 
-.card:hover {}
-
 .card-title {
   text-align: center;
   font-size: 2em;

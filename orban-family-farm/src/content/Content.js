@@ -1,29 +1,42 @@
-import React from "react";
+import React, {useState} from "react";
 import Card from "../components/Card";
+import axios from 'axios';
 
 function Content() {
+  const getText = () => {
+    axios.get('https://tgyfpk3h5g.execute-api.us-east-1.amazonaws.com/default/?id=10006546')
+    .then(response => {
+       setText(response.data.content)
+       console.log(response.data);
+    }).catch(error =>{
+      console.log(error)
+    })
+  }
+
+  const [text, setText] = useState(() => getText());
+
   return (
     <div className="content">
-        <Card
-          title="First Card"
-          text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-          image="https://via.placeholder.com/150"
-        />
-        <Card
-          title="Second Card"
-          text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-          image="https://via.placeholder.com/150"
-        />
-        <Card
-          title="Third Card"
-          text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-          image="https://via.placeholder.com/150"
-        />
-        <Card
-          title="Fourth Card"
-          text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-          image="https://via.placeholder.com/150"
-        />
+      <Card
+        title="First Card"
+        text={text}
+        image="https://via.placeholder.com/150"
+      />
+      <Card
+        title="Second Card"
+        text={text}
+        image="https://via.placeholder.com/150"
+      />
+      <Card
+        title="Third Card"
+        text={text}
+        image="https://via.placeholder.com/150"
+      />
+      <Card
+        title="Fourth Card"
+        text={text}
+        image="https://via.placeholder.com/150"
+      />
     </div>
   );
 }
