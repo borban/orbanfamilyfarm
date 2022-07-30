@@ -2,20 +2,32 @@
   color: #333D46;
 }
 
+html {
+  background-image: url("./images/field.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+h1 {
+  font-family: 'Gochi Hand', cursive;
+  font-size: 40px;
+}
+
 .container {
   font-family: 'Inter', sans-serif;
 }
 
 .title {
   padding-top: 5px;
-  background-color: #adc56a;
+  background-color: #ADBFC1;
   text-align: center;
   border-bottom: black solid 1px;
 }
 
 .banner {
   margin: 50px;
-  background-color: #adc56a;
+  background-color: #ADBFC1;
   border: black solid 1px;
 }
 
@@ -40,6 +52,7 @@
   transition: 0.3s;
   margin: 15px;
   border: black solid 1px;
+  background-color: #ADBFC1;
 }
 
 .card-title {
@@ -47,7 +60,9 @@
   font-size: 2em;
   font-weight: 400px;
   padding: 15px;
-  background-color: #adc56a;
+  background-color: #ADBFC1;
+  font-family: 'Gochi Hand', cursive;
+  font-size: 40px;
 }
 
 .card-content {
@@ -58,7 +73,7 @@
 
 .footer {
   margin-top: 25px;
-  background-color: #adc56a;
+  background-color: #ADBFC1;
   text-align: center;
 }
 
