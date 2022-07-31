@@ -9,25 +9,26 @@ html {
   background-size: cover;
 }
 
-h1 {
-  font-family: 'Gochi Hand', cursive;
-  font-size: 40px;
-}
-
 .container {
   font-family: 'Inter', sans-serif;
 }
 
 .title {
   padding-top: 5px;
-  background-color: #ADBFC1;
+  background-color: #ACAD69;
   text-align: center;
   border-bottom: black solid 1px;
+  font-family: 'Neucha', cursive;
+  font-size: 40px;
+  background-image: url('./images/ep_naturalwhite.png');
+  background-blend-mode: multiply;
 }
 
 .banner {
   margin: 50px;
-  background-color: #ADBFC1;
+  background-color: #C3BF98;
+  background-image: url('./images/dust-scratches.png');
+  background-blend-mode: multiply;
   border: black solid 1px;
 }
 
@@ -41,6 +42,7 @@ h1 {
 .content {
   display: flex;
   flex-wrap: wrap;
+  padding: 5px 35px 5px 35px;
 }
 
 .content > * {
@@ -52,17 +54,20 @@ h1 {
   transition: 0.3s;
   margin: 15px;
   border: black solid 1px;
-  background-color: #ADBFC1;
+  background-color: #C3BF98;
+  background-image: url('./images/dust-scratches.png');
+  background-blend-mode: multiply;
 }
 
 .card-title {
   text-align: center;
-  font-size: 2em;
-  font-weight: 400px;
   padding: 15px;
-  background-color: #ADBFC1;
-  font-family: 'Gochi Hand', cursive;
+  font-family: 'Neucha', cursive;
   font-size: 40px;
+  border-bottom: solid black 1px;
+  background-color: #ACAD69;
+  background-image: url('./images/ep_naturalwhite.png');
+  background-blend-mode: multiply;
 }
 
 .card-content {
@@ -73,10 +78,19 @@ h1 {
 
 .footer {
   margin-top: 25px;
-  background-color: #ADBFC1;
   text-align: center;
+  border-top: solid black 1px;
+  border-bottom: solid black 1px;
+  background-color: #C3BF98;
+  background-image: url('./images/dust-scratches.png');
+  background-blend-mode: multiply;
 }
 
 .footer a {
   text-decoration: none;
+  color: black;
+}
+
+.footer a:hover {
+  background-color: #ACAD69;
 }
