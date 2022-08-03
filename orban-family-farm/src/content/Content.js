@@ -3,29 +3,29 @@ import Card from "../components/Card";
 import axios from "axios";
 
 function Content() {
-  const getSummaries = () => {
+  const getPhotos = () => {
     axios
       .get("https://tgyfpk3h5g.execute-api.us-east-1.amazonaws.com/default")
       .then((response) => {
         let results = JSON.parse(response.data);
-        setSummaries(results.documents.map((document) => document.summary));
+        setPhotos(results.documents.map(document => document));
       })
       .catch((error) => {
         console.log(error);
       });
   };
 
-  const [summaries, setSummaries] = useState(() => getSummaries());
+  const [photos, setPhotos] = useState(() => getPhotos());
 
   return (
     <div className="content">
-      {summaries ? (
-        summaries.map((summary) => {
+      {photos ? (
+        photos.map(document => {
           return (
             <Card
-              title="Card"
-              text={summary}
-              image="https://loremflickr.com/250/260"
+              title={document.title}
+              text={document.description}
+              image={document.url}
             />
           );
         })
