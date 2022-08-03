@@ -30,7 +30,7 @@ function Content() {
           );
         })
       ) : (
-        <div>No content</div>
+        <div className="spinner-container"><div className="loading-spinner"></div></div>
       )}
     </div>
   );
