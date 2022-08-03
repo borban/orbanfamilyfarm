@@ -2,8 +2,8 @@ import React from "react";
 
 function Title() {
   return (
-    <div className="title">
-      Orban Family Farm
+    <div>
+      <h1 className="title">Orban Family Farm</h1>
     </div>
   );
 }

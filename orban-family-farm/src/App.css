@@ -5,23 +5,27 @@ html {
   background-size: cover;
 }
 
+h1 {
+ font-size: 40px;
+}
+
 .container {
   font-family: 'Inter', sans-serif;
 }
 
 .title {
   padding-top: 5px;
+  margin: 0;
   background-color: #ACAD69;
   text-align: center;
   border-bottom: black solid 1px;
   font-family: 'Neucha', cursive;
-  font-size: 40px;
   background-image: url('./images/ep_naturalwhite.png');
   background-blend-mode: multiply;
 }
 
 .banner {
-  margin: 50px;
+  margin: 15px;
   background-color: #C3BF98;
   background-image: url('./images/dust-scratches.png');
   background-blend-mode: multiply;
@@ -38,7 +42,6 @@ html {
 .content {
   display: flex;
   flex-wrap: wrap;
-  padding: 5px 35px 5px 35px;
 }
 
 .content > * {
@@ -55,9 +58,8 @@ html {
 
 .card-title {
   text-align: center;
-  padding: 15px;
+  padding-top: 5px;
   font-family: 'Neucha', cursive;
-  font-size: 40px;
   border-bottom: solid black 1px;
   background-color: #ACAD69;
   background-image: url('./images/ep_naturalwhite.png');
